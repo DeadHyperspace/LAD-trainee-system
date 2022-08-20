@@ -1,0 +1,16 @@
+td {
+    text-align: center;
+    background-color: gray;
+}
+body{
+    align-self: center;
+    display: flex;
+}
+form{
+    align-items: center;
+    background-color: gray;
+    border:solid black;
+}
+.tables{
+    align-items: center;
+    background-color: black;}

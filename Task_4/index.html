@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <title>Epic Fight</title>
+</head>
+<body>
+    <form id="difficultBar">
+        <table>
+            <tr>
+                <td>Выберите режим сложности</td>
+            </tr>
+            <tr>
+                <td><input id="EasyDifficult" name="difficult" onchange="hpSwitch(this)" type="radio" value="1"> Easy</td>
+            </tr>
+            <tr>
+                <td><input id="MediumDifficult" name="difficult" onchange="hpSwitch(this)" type="radio" value="0.6">Hard</td>
+            </tr>
+            <tr>
+                <td><input id="HardDifficult" name="difficult" onchange="hpSwitch(this)" type="radio" value="0.4">Hell on Earth</td>
+            </tr>
+        </table>
+    </form>
+    <div class = 'tables'>
+        <table>
+        <tr>
+            <td colspan="2">
+                <button id="start" onclick="fight()">Начать сражение</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="turns"> ХОД : </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <b>ХП</b>
+            </td>
+        </tr>
+        <tr>
+            <td id="monsterJSON-hp"></td>
+            <td id="heroJSON-hp"></td>
+        </tr>
+        <tr>
+            <td>Чудище:</td>
+            <td>Герой:</td>
+        </tr>
+        <tr>
+            <td>Лютый</td>
+            <td>Евстафий</td>
+        </tr>
+        <tr>
+            <td id="monsterJSON-move"></td>
+            <td>
+                <select id="heroJSON-moves"></select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="endTurn()">Сделать ход</button>
+            </td>
+        </tr>
+        </table>
+    </div>
+<script src="task4.js"></script>
+</body>
+</html>

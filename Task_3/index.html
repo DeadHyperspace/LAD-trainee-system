@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <meta  charset="UTF-8">
+    <title>Угадай число</title>
+</head>
+<body>
+    <p>Компьютер загадывает число из нескольких различающихся цифр (от 3 до 6). 
+        Игроку дается несколько попыток на то, чтобы угадать это число.
+        После каждой попытки компьютер сообщает количество совпавших цифр стоящих не на своих местах, 
+        а также количество правильных цифр на своих местах.</p>
+    <button id="start" onclick=" generateRandomNumber()">Нажмите чтобы начать игру </button><br>
+        Введите число: <br> <input id="UserNumb" type="number" min="100" max="999">
+    <button id="try" onclick="guessTheNumber()">Нажмите чтобы попытаться угадать загаданное число.</button>
+    <p id ="tryCount"><p>
+<script src="task3.js"></script>
+</body>
+</html>
